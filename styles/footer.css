@@ -71,6 +71,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
     gap: 1rem;
+    justify-items: center;
 }
 
 
@@ -79,6 +80,13 @@
     padding: 1rem;
     background-color: var(--clr-dark-grey);
     border-radius: .5rem;
+    transition: all .3s ease-in-out;
+}
+
+.social-media__link:hover,
+.social-media__link:focus {
+    transform: rotate(360deg);
+    background-color: var(--clr-primary);
 }
 
 .footer__input {
@@ -92,6 +100,7 @@
 
 .footer__btn {
     border-radius: 0 1rem 1rem 0;
+    padding: 1rem 1.5rem;
 }
 
 .footer__subscribe {
