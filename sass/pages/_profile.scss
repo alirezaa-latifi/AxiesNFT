@@ -3,7 +3,7 @@
     color: white;
     background-image: url(../../assets/ProfilePage/jeremy-thomas-4dpAqfTbvKA-unsplash.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center ;
     background-size: cover;
 
     &::before {
@@ -31,8 +31,6 @@
         text-transform: capitalize;
     }
 }
-
-
 
 .profile {
     padding: 7rem 0;
