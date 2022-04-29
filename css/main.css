@@ -119,6 +119,13 @@ button {
   color: white;
 }
 
+.header {
+  padding: 2rem 0;
+}
+.header__wrapper {
+  display: flex;
+}
+
 .footer {
   padding: 7rem 0;
   background-color: var(--clr-dark);
