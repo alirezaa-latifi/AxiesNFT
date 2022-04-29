@@ -2,6 +2,10 @@
 .header {
     padding: 2rem 0;
     background-color: var(--clr-dark);
+    box-shadow: inset 0px -1px 0 0px var(--clr-dark-grey);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 
     &__wrapper {
         display: flex;
