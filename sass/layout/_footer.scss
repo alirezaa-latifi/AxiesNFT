@@ -88,10 +88,13 @@
 
     &__social-link {
         color: white;
-        padding: 1rem;
         background-color: var(--clr-dark-grey);
         border-radius: .5rem;
         transition: all .3s ease-in-out;
+        width: 40px;
+        height: 40px;
+        display: grid;
+        place-items: center;
 
         &:hover,
         &:focus {

@@ -260,10 +260,13 @@ button {
 }
 .footer__social-link {
   color: white;
-  padding: 1rem;
   background-color: var(--clr-dark-grey);
   border-radius: 0.5rem;
   transition: all 0.3s ease-in-out;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
 }
 .footer__social-link:hover, .footer__social-link:focus {
   transform: rotate(360deg);
