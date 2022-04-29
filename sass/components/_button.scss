@@ -1,0 +1,32 @@
+.btn {
+    color: white;
+    padding: .7em 2em;
+    border: none;
+    box-shadow: inset 0px 0px 0px 2px rgb(255, 255, 255);
+    background-color: transparent;
+    border-radius: 10rem;
+    white-space: nowrap;
+    text-transform: capitalize;
+    transition: all .2s ease-in-out;
+    font-weight: bold;
+    display: block;
+
+    &:hover,
+    &:focus {
+        color: black;
+        background-color: white;
+        box-shadow: none;
+    }
+
+    &--primary {
+        background-color: var(--clr-primary);
+        box-shadow: none;
+
+        &:hover,
+        &:focus {
+            box-shadow: inset 0px 0px 0px 2px var(--clr-primary);
+            color: white;
+            background-color: transparent;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.path {
+    display: flex;
+
+    &__item + &__item::before {
+        content: '/';
+        margin: 0 .5rem;
+        color: var(--clr-light-grey);    
+    }
+
+    &__link {
+        text-transform: capitalize;
+        color: var(--clr-light-grey);
+        transition: all .2s ease-in-out;
+        
+        &:hover, &:focus {
+            color: white;
+        }
+    }
+
+    &__link--active {
+        color: white;    
+    }
+
+}
