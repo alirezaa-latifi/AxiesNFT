@@ -39,6 +39,95 @@
     <!-- header end -->
 
 
+    <!-- hero start -->
+    <section class="hero">
+        <div class="container hero__wrapper">
+            <h1 class="hero__title">edite profile</h1>
+            <ul class="path">
+                <li class="path__item"><a class="path__link" href="#">home</a></li>
+                <li class="path__item"><a class="path__link" href="#">pages</a></li>
+                <li class="path__item"><a class="path__link" href="#">author</a></li>
+                <li class="path__item"><a class="path__link path__link--active" href="#">edite profile</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- hero end -->
+
+
+    <!-- profile start -->
+    <main class="profile">
+        <div class="container profile__wrapper">
+
+            <!-- profile-card -->
+            <div class="profile-card">
+                <img class="profile-card__img" src="assets/ProfilePage/avatar.jpg" alt="user avatar">
+                <button class="btn">upload new photo</button>
+                <button class="btn">delete</button>
+            </div>
+
+            <!-- profile-form -->
+            <div class="profile-form">
+
+                <!-- cover -->
+                <div class="profile-form__cover">
+                    <h3 class="profile-form__cover-title">Chose Your Cover Image</h3>
+                    <div class="profile-form__cover-items">
+                        <div class="profile-form__cover-item profile-form__cover-item--uploader ">
+                            <button class="btn">upload file</button>
+                        </div>
+                        <img class="profile-form__cover-item" src="assets/ProfilePage/cover_profile1.jpg" alt="">
+                        <img class="profile-form__cover-item" src="assets/ProfilePage/cover_profile2.jpg" alt="">
+                    </div>
+                </div>
+
+                <!-- account-info  -->
+                <div class="profile-form__info">
+                    <h3 class="profile-form__info-title">Account Info</h3>
+                    <div class="profile-form__info-name">
+                        <label class="profile-form__info-label" for="name">Display Name</label>
+                        <input class="profile-form__info-input" id="name" type="text">
+                    </div>
+                    <div class="profile-form__info-url">
+                        <label class="profile-form__info-label" for="url">Custom URL</label>
+                        <input class="profile-form__info-input" id="url" type="text">
+                    </div>
+                    <div class="profile-form__info-email">
+                        <label class="profile-form__info-label" for="email">Email</label>
+                        <input class="profile-form__info-input" id="email" type="text">
+                    </div>
+                    <div class="profile-form__info-bio">
+                        <label class="profile-form__info-label" for="bio">Bio</label>
+                        <textarea class="profile-form__info-input" name="" id="bio" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+
+                <!--social media -->
+                <div class="profile-form__social">
+                    <h3 class="profile-form__social-title">Your Social Media</h3>
+                    <div class="profile-form__social-name">
+                        <label class="profile-form__social-label" for="name">Facebook</label>
+                        <input class="profile-form__social-input" id="name" type="text">
+                        <button class="btn  btn--primary profile-form__social-btn">connect to facebook</button>
+                    </div>
+                    <div class="profile-form__social-url">
+                        <label class="profile-form__social-label" for="url">Twitter</label>
+                        <input class="profile-form__social-input" id="url" type="text">
+                        <button class="btn  btn--primary profile-form__social-btn">connect to facebook</button>
+                    </div>
+                    <div class="profile-form__social-email">
+                        <label class="profile-form__social-label" for="email">Discord</label>
+                        <input class="profile-form__social-input" id="email" type="text">
+                        <button class="btn  btn--primary profile-form__social-btn">connect to facebook</button>
+                    </div>
+                </div>
+                <button class="btn profile-form__update-btn">update profile</button>
+
+            </div>
+        </div>
+    </main>
+    <!-- profile end -->
+
+
 
     <!-- footer start -->
     <footer class="footer">
