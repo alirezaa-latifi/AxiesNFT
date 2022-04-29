@@ -120,6 +120,12 @@
                 box-shadow: inset 0 0 0 1px var(--clr-dark-grey);
                 color: white;
                 width: 100%;
+                &:focus {
+                    outline: 0;
+                    box-shadow: inset 0 0 0 1px var(--clr-primary);
+
+
+                }
             }
 
         }

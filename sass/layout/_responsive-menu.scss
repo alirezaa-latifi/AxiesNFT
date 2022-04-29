@@ -1,0 +1,53 @@
+.responsive-menu {
+    margin: 0 auto;
+
+}
+
+.nav {
+    &__list {
+        display: flex;
+        gap: 1.7rem;
+    }
+
+    &__link{
+        font-size: 1.6rem;
+        color: white;
+        text-transform: capitalize;
+        white-space: nowrap;
+        position: relative;
+        transition: all .2s ease-in-out;
+
+        &:hover, &:focus {
+            color: var(--clr-primary) ;
+
+            &::before {
+                content: '';
+                width: 0;
+                height: 3px;
+                position: absolute;
+                top: 110%;
+                left: 5%;
+                margin: 0 auto;
+                border-radius: 10rem;
+                background-color:  rgb(167, 27, 206);
+                animation: nav-hover .2s .2s forwards;
+            }
+           
+        }
+
+
+    }
+
+}
+
+@keyframes nav-hover {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100% - 10%;
+    }
+}
+
+

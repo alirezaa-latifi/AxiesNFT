@@ -1,9 +1,26 @@
 
 .header {
     padding: 2rem 0;
+    background-color: var(--clr-dark);
 
     &__wrapper {
         display: flex;
+        align-items: center;
     }
 
+    &__search {
+        color: white;
+        margin-right: 2rem;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 1000px) {
+    .responsive-menu {
+        display: none;
+    }
+
+    .header__search {
+        margin-left: auto;
+    }
 }

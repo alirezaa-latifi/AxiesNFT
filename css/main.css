@@ -82,12 +82,16 @@ button {
   text-transform: capitalize;
   transition: all 0.2s ease-in-out;
   font-weight: bold;
-  display: block;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 .btn:hover, .btn:focus {
   color: black;
   background-color: white;
   box-shadow: none;
+  outline: 0;
 }
 .btn--primary {
   background-color: var(--clr-primary);
@@ -121,11 +125,67 @@ button {
 
 .header {
   padding: 2rem 0;
+  background-color: var(--clr-dark);
 }
 .header__wrapper {
   display: flex;
+  align-items: center;
+}
+.header__search {
+  color: white;
+  margin-right: 2rem;
+  cursor: pointer;
 }
 
+@media (max-width: 1000px) {
+  .responsive-menu {
+    display: none;
+  }
+
+  .header__search {
+    margin-left: auto;
+  }
+}
+.responsive-menu {
+  margin: 0 auto;
+}
+
+.nav__list {
+  display: flex;
+  gap: 1.7rem;
+}
+.nav__link {
+  font-size: 1.6rem;
+  color: white;
+  text-transform: capitalize;
+  white-space: nowrap;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.nav__link:hover, .nav__link:focus {
+  color: var(--clr-primary);
+}
+.nav__link:hover::before, .nav__link:focus::before {
+  content: "";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  top: 110%;
+  left: 5%;
+  margin: 0 auto;
+  border-radius: 10rem;
+  background-color: rgb(167, 27, 206);
+  animation: nav-hover 0.2s 0.2s forwards;
+}
+
+@keyframes nav-hover {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
 .footer {
   padding: 7rem 0;
   background-color: var(--clr-dark);
@@ -176,12 +236,17 @@ button {
   margin-bottom: 2rem;
 }
 .footer__input {
+  color: white;
   width: 100%;
   padding: 1rem 1.5rem;
   background-color: transparent;
   border: none;
   box-shadow: inset 0 0 0 1px var(--clr-dark-grey);
   border-radius: 1rem 0 0 1rem;
+}
+.footer__input:focus {
+  outline: 0;
+  box-shadow: inset 0 0 0 1px var(--clr-primary);
 }
 .footer__btn {
   border-radius: 0 1rem 1rem 0;
@@ -327,6 +392,10 @@ button {
   box-shadow: inset 0 0 0 1px var(--clr-dark-grey);
   color: white;
   width: 100%;
+}
+.profile-form__info-input:focus, .profile-form__social-input:focus {
+  outline: 0;
+  box-shadow: inset 0 0 0 1px var(--clr-primary);
 }
 .profile-form__social-btn {
   margin-top: 1.5rem;
